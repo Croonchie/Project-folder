@@ -23,3 +23,11 @@ const scores = [85, 92, 78, 90];
 const [firstScore, secondScore] = scores;
 console.log(firstScore);
 console.log(secondScore);
+
+//Spread Operator
+const clonedStudent = { ...student, graduationYear: 2024 };
+console.log(clonedStudent);
+
+const newCourses = ["History", "Art"];
+const allCourses = [...student.courses, ...newCourses];
+console.log(allCourses);

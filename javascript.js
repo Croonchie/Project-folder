@@ -31,3 +31,16 @@ console.log(clonedStudent);
 const newCourses = ["History", "Art"];
 const allCourses = [...student.courses, ...newCourses];
 console.log(allCourses);
+
+// Object Methods
+student.addCourse = function(newCourse) {
+    this.courses.push(newCourse);
+  };
+  
+  student.getTotalCourses = function() {
+    return this.courses.length;
+  };
+  
+  student.addCourse("Computer Science");
+  console.log(student.courses);
+  console.log(student.getTotalCourses());
